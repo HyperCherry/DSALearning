@@ -16,6 +16,14 @@ void initList(Node head) {
     head->prev = NULL;
 }
 
+/**
+ * 插入元素
+ * 时间复杂度O(n)
+ * @param head
+ * @param element
+ * @param index
+ * @return
+ */
 _Bool insertList(Node head, E element, int index) {
     if (index < 0) return 0;
     while (index--) {
